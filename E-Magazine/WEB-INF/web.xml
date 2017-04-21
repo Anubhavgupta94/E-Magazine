@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>E-Magazine</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+   
+   <servlet>
+    <servlet-name>Logout</servlet-name>
+	<servlet-class>Logout</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>Logout</servlet-name>
+		<url-pattern>/servlet/Logout</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>ArticleOfMonth</servlet-name>
+	<servlet-class>ArticleOfMonth</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ArticleOfMonth</servlet-name>
+		<url-pattern>/servlet/ArticleOfMonth</url-pattern>
+  </servlet-mapping>
+   
+   
+    <servlet>
+    <servlet-name>OthersSection</servlet-name>
+	<servlet-class>OthersSection</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>OthersSection</servlet-name>
+		<url-pattern>/servlet/OthersSection</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>FacultySection</servlet-name>
+	<servlet-class>FacultySection</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>FacultySection</servlet-name>
+		<url-pattern>/servlet/FacultySection</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>StudentSection</servlet-name>
+	<servlet-class>StudentSection</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>StudentSection</servlet-name>
+		<url-pattern>/servlet/StudentSection</url-pattern>
+  </servlet-mapping>
+   
+    <servlet>
+    <servlet-name>AlumniSection</servlet-name>
+	<servlet-class>AlumniSection</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>AlumniSection</servlet-name>
+		<url-pattern>/servlet/AlumniSection</url-pattern>
+  </servlet-mapping>
+   
+   
+   
+     <servlet>
+    <servlet-name>AdminSection</servlet-name>
+	<servlet-class>AdminSection</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>AdminSection</servlet-name>
+		<url-pattern>/servlet/AdminSection</url-pattern>
+  </servlet-mapping>
+   
+   
+   
+   <servlet>
+    <servlet-name>DeleteComment</servlet-name>
+	<servlet-class>DeleteComment</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>DeleteComment</servlet-name>
+		<url-pattern>/servlet/DeleteComment</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>AllComments</servlet-name>
+	<servlet-class>AllComments</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>AllComments</servlet-name>
+		<url-pattern>/servlet/AllComments</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>ShowFeedbackForm</servlet-name>
+	<servlet-class>ShowFeedbackForm</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ShowFeedbackForm</servlet-name>
+		<url-pattern>/servlet/ShowFeedbackForm</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ShowContactForm</servlet-name>
+	<servlet-class>ShowContactForm</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ShowContactForm</servlet-name>
+		<url-pattern>/servlet/ShowContactForm</url-pattern>
+  </servlet-mapping>
+   
+   
+   <servlet>
+    <servlet-name>Contact</servlet-name>
+	<servlet-class>Contact</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>Contact</servlet-name>
+		<url-pattern>/servlet/Contact</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Feedback</servlet-name>
+	<servlet-class>Feedback</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>Feedback</servlet-name>
+		<url-pattern>/servlet/Feedback</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>UpdateAdminInfo</servlet-name>
+	<servlet-class>UpdateAdminInfo</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>UpdateAdminInfo</servlet-name>
+		<url-pattern>/servlet/UpdateAdminInfo</url-pattern>
+  </servlet-mapping>
+   
+    <servlet>
+    <servlet-name>WriteComment</servlet-name>
+	<servlet-class>WriteComment</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>WriteComment</servlet-name>
+		<url-pattern>/servlet/WriteComment</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>ConfirmAccountComment</servlet-name>
+	<servlet-class>ConfirmAccountComment</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ConfirmAccountComment</servlet-name>
+		<url-pattern>/servlet/ConfirmAccountComment</url-pattern>
+  </servlet-mapping>
+   
+   
+    <servlet>
+    <servlet-name>AllNoticeNew</servlet-name>
+	<servlet-class>AllNoticeNew</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>AllNoticeNew</servlet-name>
+		<url-pattern>/servlet/AllNoticeNew</url-pattern>
+  </servlet-mapping>
+   
+   
+   <servlet>
+    <servlet-name>AllArticleNew</servlet-name>
+	<servlet-class>AllArticleNew</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>AllArticleNew</servlet-name>
+		<url-pattern>/servlet/AllArticleNew</url-pattern>
+  </servlet-mapping>
+   
+   
+   
+   
+   
+   <servlet>
+    <servlet-name>NoticeAddTypeAll</servlet-name>
+	<servlet-class>NoticeAddTypeAll</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>NoticeAddTypeAll</servlet-name>
+		<url-pattern>/servlet/NoticeAddTypeAll</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>NoticeAddCategoryAll</servlet-name>
+	<servlet-class>NoticeAddCategoryAll</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>NoticeAddCategoryAll</servlet-name>
+		<url-pattern>/servlet/NoticeAddCategoryAll</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>NoticeAddClassAll</servlet-name>
+	<servlet-class>NoticeAddClassAll</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>NoticeAddClassAll</servlet-name>
+		<url-pattern>/servlet/NoticeAddClassAll</url-pattern>
+  </servlet-mapping>
+   
+   
+   
+   <servlet>
+    <servlet-name>NoticeAddType</servlet-name>
+	<servlet-class>NoticeAddType</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>NoticeAddType</servlet-name>
+		<url-pattern>/servlet/NoticeAddType</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>NoticeAddCategory</servlet-name>
+	<servlet-class>NoticeAddCategory</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>NoticeAddCategory</servlet-name>
+		<url-pattern>/servlet/NoticeAddCategory</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>NoticeAddClass</servlet-name>
+	<servlet-class>NoticeAddClass</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>NoticeAddClass</servlet-name>
+		<url-pattern>/servlet/NoticeAddClass</url-pattern>
+  </servlet-mapping>
+   
+   
+   <servlet>
+    <servlet-name>ArticleAddType</servlet-name>
+	<servlet-class>ArticleAddType</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ArticleAddType</servlet-name>
+		<url-pattern>/servlet/ArticleAddType</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ArticleAddCategory</servlet-name>
+	<servlet-class>ArticleAddCategory</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ArticleAddCategory</servlet-name>
+		<url-pattern>/servlet/ArticleAddCategory</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>ArticleAddClass</servlet-name>
+	<servlet-class>ArticleAddClass</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ArticleAddClass</servlet-name>
+		<url-pattern>/servlet/ArticleAddClass</url-pattern>
+  </servlet-mapping>
+   
+   
+      
+    <servlet>
+    <servlet-name>ArticleAddTypeStudent</servlet-name>
+	<servlet-class>ArticleAddTypeStudent</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ArticleAddTypeStudent</servlet-name>
+		<url-pattern>/servlet/ArticleAddTypeStudent</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ArticleAddCategoryStudent</servlet-name>
+	<servlet-class>ArticleAddCategoryStudent</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ArticleAddCategoryStudent</servlet-name>
+		<url-pattern>/servlet/ArticleAddCategoryStudent</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>ArticleAddClassStudent</servlet-name>
+	<servlet-class>ArticleAddClassStudent</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ArticleAddClassStudent</servlet-name>
+		<url-pattern>/servlet/ArticleAddClassStudent</url-pattern>
+  </servlet-mapping>
+  
+  
+     
+    <servlet>
+    <servlet-name>ArticleAddTypeFaculty</servlet-name>
+	<servlet-class>ArticleAddTypeFaculty</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ArticleAddTypeFaculty</servlet-name>
+		<url-pattern>/servlet/ArticleAddTypeFaculty</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ArticleAddCategoryFaculty</servlet-name>
+	<servlet-class>ArticleAddCategoryFaculty</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ArticleAddCategoryFaculty</servlet-name>
+		<url-pattern>/servlet/ArticleAddCategoryFaculty</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>ArticleAddClassFaculty</servlet-name>
+	<servlet-class>ArticleAddClassFaculty</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ArticleAddClassFaculty</servlet-name>
+		<url-pattern>/servlet/ArticleAddClassFaculty</url-pattern>
+  </servlet-mapping>
+  
+  
+     
+    <servlet>
+    <servlet-name>ArticleAddTypeOthers</servlet-name>
+	<servlet-class>ArticleAddTypeOthers</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ArticleAddTypeOthers</servlet-name>
+		<url-pattern>/servlet/ArticleAddTypeOthers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ArticleAddCategoryOthers</servlet-name>
+	<servlet-class>ArticleAddCategoryOthers</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ArticleAddCategoryOthers</servlet-name>
+		<url-pattern>/servlet/ArticleAddCategoryOthers</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>ArticleAddClassOthers</servlet-name>
+	<servlet-class>ArticleAddClassOthers</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ArticleAddClassOthers</servlet-name>
+		<url-pattern>/servlet/ArticleAddClassOthers</url-pattern>
+  </servlet-mapping>
+   
+    <servlet>
+    <servlet-name>ArticleAddTypeAlumni</servlet-name>
+	<servlet-class>ArticleAddTypeAlumni</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ArticleAddTypeAlumni</servlet-name>
+		<url-pattern>/servlet/ArticleAddTypeAlumni</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ArticleAddCategoryAlumni</servlet-name>
+	<servlet-class>ArticleAddCategoryAlumni</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ArticleAddCategoryAlumni</servlet-name>
+		<url-pattern>/servlet/ArticleAddCategoryAlumni</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>ArticleAddClassAlumni</servlet-name>
+	<servlet-class>ArticleAddClassAlumni</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ArticleAddClassAlumni</servlet-name>
+		<url-pattern>/servlet/ArticleAddClassAlumni</url-pattern>
+  </servlet-mapping>
+   
+   
+   
+   <servlet>
+    <servlet-name>DeleteNotice</servlet-name>
+	<servlet-class>DeleteNotice</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>DeleteNotice</servlet-name>
+		<url-pattern>/servlet/DeleteNotice</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>AllNotice</servlet-name>
+	<servlet-class>AllNotice</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>AllNotice</servlet-name>
+		<url-pattern>/servlet/AllNotice</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DeleteArticle</servlet-name>
+	<servlet-class>DeleteArticle</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>DeleteArticle</servlet-name>
+		<url-pattern>/servlet/DeleteArticle</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>PostNoticeAll</servlet-name>
+	<servlet-class>PostNoticeAll</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>PostNoticeAll</servlet-name>
+		<url-pattern>/servlet/PostNoticeAll</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>PostNoticeOthers</servlet-name>
+	<servlet-class>PostNoticeOthers</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>PostNoticeOthers</servlet-name>
+		<url-pattern>/servlet/PostNoticeOthers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>PostNoticeStudent</servlet-name>
+	<servlet-class>PostNoticeStudent</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>PostNoticeStudent</servlet-name>
+		<url-pattern>/servlet/PostNoticeStudent</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>PostNoticeAlumni</servlet-name>
+	<servlet-class>PostNoticeAlumni</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>PostNoticeAlumni</servlet-name>
+		<url-pattern>/servlet/PostNoticeAlumni</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>PostNoticeFaculty</servlet-name>
+	<servlet-class>PostNoticeFaculty</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>PostNoticeFaculty</servlet-name>
+		<url-pattern>/servlet/PostNoticeFaculty</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>PostNotice</servlet-name>
+	<servlet-class>PostNotice</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>PostNotice</servlet-name>
+		<url-pattern>/servlet/PostNotice</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>AllArticle</servlet-name>
+	<servlet-class>AllArticle</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>AllArticle</servlet-name>
+		<url-pattern>/servlet/AllArticle</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>PostArticleOthers</servlet-name>
+	<servlet-class>PostArticleOthers</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>PostArticleOthers</servlet-name>
+		<url-pattern>/servlet/PostArticleOthers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>PostArticleStudent</servlet-name>
+	<servlet-class>PostArticleStudent</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>PostArticleStudent</servlet-name>
+		<url-pattern>/servlet/PostArticleStudent</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>PostArticleAlumni</servlet-name>
+	<servlet-class>PostArticleAlumni</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>PostArticleAlumni</servlet-name>
+		<url-pattern>/servlet/PostArticleAlumni</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>PostArticleFaculty</servlet-name>
+	<servlet-class>PostArticleFaculty</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>PostArticleFaculty</servlet-name>
+		<url-pattern>/servlet/PostArticleFaculty</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>PostArticle</servlet-name>
+	<servlet-class>PostArticle</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>PostArticle</servlet-name>
+		<url-pattern>/servlet/PostArticle</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Update</servlet-name>
+	<servlet-class>Update</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>Update</servlet-name>
+		<url-pattern>/servlet/Update</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>ConfirmAccount</servlet-name>
+	<servlet-class>ConfirmAccount</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ConfirmAccount</servlet-name>
+		<url-pattern>/servlet/ConfirmAccount</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>Delete</servlet-name>
+	<servlet-class>Delete</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>Delete</servlet-name>
+		<url-pattern>/servlet/Delete</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>AdminRegistration</servlet-name>
+	<servlet-class>AdminRegistration</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>AdminRegistration</servlet-name>
+		<url-pattern>/servlet/AdminRegistration</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>OthersRegistration</servlet-name>
+	<servlet-class>OthersRegistration</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>OthersRegistration</servlet-name>
+		<url-pattern>/servlet/OthersRegistration</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   
+  <servlet>
+    <servlet-name>AlumniRegistration</servlet-name>
+	<servlet-class>AlumniRegistration</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>AlumniRegistration</servlet-name>
+		<url-pattern>/servlet/AlumniRegistration</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>FacultyRegistration</servlet-name>
+	<servlet-class>FacultyRegistration</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>FacultyRegistration</servlet-name>
+		<url-pattern>/servlet/FacultyRegistration</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>StudentRegistration</servlet-name>
+	<servlet-class>StudentRegistration</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>StudentRegistration</servlet-name>
+		<url-pattern>/servlet/StudentRegistration</url-pattern>
+  </servlet-mapping>
+  
+  
+        <servlet>
+    <servlet-name>ShowRecords</servlet-name>
+	<servlet-class>ShowRecords</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>ShowRecords</servlet-name>
+		<url-pattern>/servlet/ShowRecords</url-pattern>
+  </servlet-mapping>
+  
+        
+  
+    <servlet>
+    <servlet-name>Login</servlet-name>
+	<servlet-class>Login</servlet-class>
+  </servlet>
+
+    <servlet-mapping>
+	    <servlet-name>Login</servlet-name>
+		<url-pattern>/servlet/Login</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>

@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Alumni Registration</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="tooplate_style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="css/coda-slider.css" type="text/css" charset="utf-8" />
+<script type="text/javascript">
+			function MM_jumpMenu(targ,selObj,restore){ //v3.0
+			eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+			if (restore) selObj.selectedIndex=0;
+			}
+			</script>
+			<style type="text/css">
+			body table tr td {
+			font-size: 18px;
+			}
+			</style>
+            
+            <script language="javascript">
+			function match()
+			{
+				if(document.alumnireg.pass.value==document.alumnireg.repass.value)
+				{
+					return true;
+				}
+				else
+				{
+				alert("Password and Retype Password are not same");
+						document.alumnireg.pass.focus();
+						return false;
+				}
+				
+				var e=/^\w\w*\@\w*\.\w*$/;
+				  if (document.alumnireg.email.value.search(e)==-1)
+					{				  
+						alert("Please enter correct email id");
+						document.alumnireg.email.focus();
+						return false;
+				    } 
+					
+					
+					var n = /^[0-9]+$/;  
+				  if(document.alumnireg.prinum.value.search(n)==-1)  
+				  {  
+				  alert("Mobile No. is not valid");  
+				  document.alumnireg.prinum.focus();  
+				  return false;  
+				  }  
+				  
+				  
+					var m = /^[0-9]+$/;  
+				  if(document.alumnireg.secnum.value.search(m)==-1)  
+				  {  
+				  alert("No. is not valid");  
+				  document.alumnireg.secnum.focus();  
+				  return false;  
+				  }  
+				  
+			}
+		</script>
+
+</head>
+<body>
+	
+
+	<div id="tooplate_wrapper">
+        <div id="tooplate_sidebar">
+
+            <div id="menu">
+                <ul class="navigation">
+                    <li><a href="index.html" class="menu_02">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
+                    <li><a href="Login.html" class="menu_02">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login</a></li>
+                    <li><a href="SignUp.html" class="menu_03">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registration</a></li>
+                    <li><a href="About.html" class="menu_04">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About</a></li>
+                    
+                    <li><a href="servlet/ArticleOfMonth" class="menu_05">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Article of the Month</a></li>
+                  
+                    <li><a href="servlet/AllArticleNew" class="menu_06">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Articles</a></li>
+                    <li><a href="Gallery.html" class="menu_07">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gallery</a></li>
+                    <li><a href="ConfirmAccount.html" class="menu_08">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notice</a></li>
+                    <li><a href="Feedback.html" class="menu_09">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feedback</a></li>
+                    <li><a href="Contact.html" class="menu_10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact</a></li>
+                </ul>
+            </div>
+		</div> <!-- end of sidebar -->  
+        
+        
+       <div id="content">
+	   <form action="servlet/AlumniRegistration" method="post" name="alumnireg" onSubmit="return match()">
+        <table align="center" width="547" border="0">
+			<tr>
+			<th align="center" colspan="2"><h1>REGISTRATION PAGE</h1></th>
+			</tr>
+			<tr>
+			<td colspan="2">&nbsp;</td>
+			</tr>
+			<tr>
+			<td width="185">Name</td>
+			<td width="352"><label for="name"></label>
+			<input name="name" type="text" id="name" size="41" required="required"/></td>
+			</tr>
+			
+            <tr>
+			<td width="185">Username</td>
+			<td width="352"><label for="uname"></label>
+			<input name="uname" type="text" id="uname" size="41" required="required"/></td>
+			</tr>
+            
+			<tr>
+			<td>Password</td>
+			<td>
+			<input name="pass" type="password" id="pass" size="41" required="required" /></td>
+			</tr>
+			<tr>
+			<td>Retype Password</td>
+			<td>
+			<input name="repass" type="password" id="repass" size="41" required="required" /></td>
+			</tr>
+			<tr>
+			<td>Email ID</td>
+			 <td><label for="email"></label>
+			 <input name="email" type="email" id="email" size="41" required="required" /></td>
+			</tr>
+			<tr>
+			<td>Date of Birth</td>
+			<td><label for="dob"></label>
+			<input name="dob" type="date" id="dob" size="41" required="required" /></td>
+			</tr>
+            
+			<tr>
+			<td>Branch</td>
+			<td>
+			<select name="branch" >
+			<option>Select</option>
+			<option>Electrical Engineering</option>
+			<option>Mechanical Engineering</option>
+			<option>Civil Engineering</option>
+			<option>Computer Science Engineering</option>
+			<option>Electronics and Communication Engineering</option>
+			<option>Information Techonolgy Engineering</option>
+			<option>EIC Engineering</option>
+			</select>
+			</td>
+			</tr>
+			
+			<tr>
+			<td>Year of Passing</td>
+			<td>
+			        <select name="year" >
+			        <option>Select</option>
+					<option>2000</option>
+			        <option>2001</option>
+			        <option>2002</option>
+			        <option>2003</option>
+			        <option>2004</option>
+			        <option>2005</option>
+			        <option>2006</option>
+			        <option>2007</option>
+			        <option>2008</option>
+			        <option>2009</option>
+			        <option>2010</option>
+			        <option>2011</option>
+			        <option>2012</option>
+			        <option>2013</option>
+			        <option>2014</option>
+			        <option>2015</option>              
+			</select>
+			</td>
+			</tr>
+			<tr>
+			<td>Occupation</td>
+			 <td><label for="occupation"></label>
+			<input name="occupation" type="text" id="occupation" size="41" required="required" /></td>
+			</tr>
+			<tr>
+			<td>Primary Number</td>
+			<td>
+			<input name="prinum" type="number" id="prinum" size="41" required="required" /></td>
+			</tr>
+			<tr>
+			<td>Secondary Number</td>
+			<td><label for="secnum"></label>
+			<input name="secnum" type="number" id="secnum" size="41"  /></td>
+			</tr>
+			<tr>
+			<td valign="top">Address</td>
+			<td><label for="add"></label>
+			<textarea name="add" required="required" id="add" cols="44" rows="5"></textarea></td>
+			</tr>
+			<tr>
+			<td colspan="2">&nbsp;</td>
+			</tr>
+			<tr align="center">
+			<td colspan="2">
+			<input type="image" name="login" id="login" src="images/New folder/register.jpg" width="170" height="52" alt="submit" />
+			</td>
+			</tr>
+			</table>
+			</form>
+        
+       </div><!--end of content-->
+
+</div><!-- end of toolplate-wrapper--> 
+
+
+<div id="footer">
+    
+	<div id="social_box">
+		<a href="#"><img src="images/facebook.png" alt="facebook" /></a>
+        <a href="#"><img src="images/flickr.png" alt="flickr" /></a>
+        <a href="#"><img src="images/myspace.png" alt="myspace" /></a>
+        <a href="#"><img src="images/twitter.png" alt="twitter" /></a>
+        <a href="#"><img src="images/youtube.png" alt="youtube" /></a>
+    </div>
+    
+    <div id="footer_left">
+		<font color="#999999"> Copyright © 2015</font><a href="http://www.ratindia.com/"> <strong>Road Ahead Technologies</strong></a><br />
+		<font color="#999999">Designed by</font> <a href="Anubhav.html"><strong>Anubhav Gupta</strong></a><br />
+       
+    </div>
+	
+    
+</div><!--end of footer-->
+
+</body>
+</html>
